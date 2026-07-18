@@ -165,7 +165,7 @@ export function Header() {
   }
 
   const iconCls = "text-slate-700 hover:bg-black/5";
-  const navCls = "text-slate-700 hover:text-emerald-700 hover:bg-black/5";
+  const navCls = "text-slate-700 hover:text-violet-700 hover:bg-black/5";
   const borderCls = "border-black/10";
 
   return (
@@ -219,7 +219,7 @@ export function Header() {
               >
                 <ShoppingCart className="h-4 w-4" />
                 {mounted && itemCount > 0 && (
-                  <span className="absolute -top-0.5 -right-0.5 h-4 w-4 rounded-full bg-emerald-500 text-[10px] font-bold text-white flex items-center justify-center shadow">
+                  <span className="absolute -top-0.5 -right-0.5 h-4 w-4 rounded-full bg-violet-600 text-[10px] font-bold text-white flex items-center justify-center shadow">
                     {itemCount > 9 ? "9+" : itemCount}
                   </span>
                 )}
@@ -236,7 +236,7 @@ export function Header() {
                       <User className="h-4 w-4" />
                     </button>
                     <button
-                      className="hidden md:flex items-center gap-1.5 h-8 px-3 rounded-xl bg-emerald-600/90 hover:bg-emerald-700 text-white text-xs font-semibold transition"
+                      className="hidden md:flex items-center gap-1.5 h-8 px-3 rounded-xl bg-violet-600/90 hover:bg-violet-700 text-white text-xs font-semibold transition"
                       onClick={() => router.push("/account")}
                     >
                       <User className="h-3.5 w-3.5" />
@@ -252,7 +252,7 @@ export function Header() {
                       Sign In
                     </button>
                     <button
-                      className="h-8 px-3 rounded-xl bg-emerald-600/90 hover:bg-emerald-700 text-white text-xs font-semibold transition shadow-sm"
+                      className="h-8 px-3 rounded-xl bg-violet-600/90 hover:bg-violet-700 text-white text-xs font-semibold transition shadow-sm"
                       onClick={() => router.push("/register")}
                     >
                       Join
@@ -303,11 +303,11 @@ export function Header() {
                       ? "bg-blue-100 text-blue-700"
                       : r.kind === "service"
                       ? "bg-purple-100 text-purple-700"
-                      : "bg-emerald-100 text-emerald-700";
+                      : "bg-violet-100 text-violet-700";
                     return (
                       <button
                         key={`${r.kind}-${r.id}`}
-                        className="flex w-full items-center gap-3 px-4 py-2.5 hover:bg-emerald-50/60 transition text-left"
+                        className="flex w-full items-center gap-3 px-4 py-2.5 hover:bg-violet-50/60 transition text-left"
                         onClick={() => { closeSearch(); router.push(r.href); }}
                       >
                         <div className="relative h-10 w-10 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100">
@@ -322,7 +322,7 @@ export function Header() {
                         </div>
                         <div className="flex flex-col items-end gap-1 flex-shrink-0">
                           <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${kindColor}`}>{kindLabel}</span>
-                          {r.price != null && <span className="text-xs font-semibold text-emerald-700">{formatPrice(r.price)}</span>}
+                          {r.price != null && <span className="text-xs font-semibold text-violet-700">{formatPrice(r.price)}</span>}
                         </div>
                       </button>
                     );

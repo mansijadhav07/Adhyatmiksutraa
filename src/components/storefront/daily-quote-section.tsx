@@ -32,7 +32,7 @@ export function DailyQuoteSection() {
   return (
     <section
       className="relative overflow-hidden py-6 sm:py-8"
-      style={{ background: "linear-gradient(135deg, #065f46 0%, #0f766e 50%, #047857 100%)" }}
+      style={{ background: "linear-gradient(135deg, #2d0a6b 0%, #5b21b6 50%, #4c1d95 100%)" }}
     >
       {/* Ambient blobs */}
       <div className="absolute -top-12 -left-12 h-48 w-48 rounded-full bg-white/5 blur-3xl pointer-events-none" />
@@ -47,7 +47,7 @@ export function DailyQuoteSection() {
           {/* Label — centered above */}
           <div className="flex justify-center mb-3">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 text-[11px] uppercase tracking-[0.2em] text-white/90 font-medium">
-              <Sparkles className="h-3 w-3 text-emerald-300" />
+              <Sparkles className="h-3 w-3 text-violet-300" />
               Quote of the Day
             </span>
           </div>
@@ -66,7 +66,7 @@ export function DailyQuoteSection() {
             </p>
 
             {quote.author && (
-              <p className="mt-2 text-sm text-emerald-200/80 font-medium tracking-wide text-right">
+              <p className="mt-2 text-sm text-violet-200/80 font-medium tracking-wide text-right">
                 — {quote.author}
               </p>
             )}
@@ -83,7 +83,7 @@ export function DailyQuoteSection() {
           <div className="flex justify-center mt-5">
             <Link
               href="/quotes"
-              className="group inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold text-emerald-900 bg-white hover:bg-emerald-50 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105 active:scale-95"
+              className="group inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold text-violet-900 bg-white hover:bg-violet-50 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105 active:scale-95"
             >
               View All Quotes
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />

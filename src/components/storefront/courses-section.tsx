@@ -39,11 +39,11 @@ export function CoursesSection() {
         {/* Header */}
         <div className="flex items-end justify-between mb-8">
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-full mb-3">
-              <BookOpen className="h-4 w-4 text-teal-600" />
-              <span className="text-sm font-medium text-teal-700">Learn &amp; Grow</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-violet-50 rounded-full mb-3">
+              <BookOpen className="h-4 w-4 text-violet-600" />
+              <span className="text-sm font-medium text-violet-700">Learn &amp; Grow</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold bg-gradient-to-r from-emerald-700 via-teal-600 to-blue-600 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold bg-gradient-to-r from-violet-700 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Healing Courses
             </h2>
             <p className="text-sm text-stone-500 mt-1 max-w-md">
@@ -52,7 +52,7 @@ export function CoursesSection() {
           </div>
           <Link
             href="/courses"
-            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-teal-700 hover:text-teal-900 transition"
+            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-violet-700 hover:text-violet-900 transition"
           >
             View all <ArrowRight className="h-4 w-4" />
           </Link>
@@ -71,10 +71,10 @@ export function CoursesSection() {
               <Link
                 key={course.id}
                 href={`/courses/${course.slug}`}
-                className="group flex flex-col rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white hover:border-teal-200 hover:-translate-y-1"
+                className="group flex flex-col rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white hover:border-violet-200 hover:-translate-y-1"
               >
                 {/* Image */}
-                <div className="relative h-44 w-full overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-100 flex-shrink-0">
+                <div className="relative h-44 w-full overflow-hidden bg-gradient-to-br from-violet-50 to-purple-100 flex-shrink-0">
                   {course.featured_image ? (
                     <img
                       src={course.featured_image}
@@ -83,16 +83,16 @@ export function CoursesSection() {
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <BookOpen className="h-12 w-12 text-teal-300" />
+                      <BookOpen className="h-12 w-12 text-violet-300" />
                     </div>
                   )}
                   {course.category && (
-                    <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 text-xs font-semibold text-teal-700">
+                    <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 text-xs font-semibold text-violet-700">
                       {course.category}
                     </span>
                   )}
                   {course.featured && (
-                    <span className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wide">
+                    <span className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-violet-600 text-white text-[10px] font-bold uppercase tracking-wide">
                       Featured
                     </span>
                   )}
@@ -100,7 +100,7 @@ export function CoursesSection() {
 
                 {/* Body */}
                 <div className="flex flex-col flex-1 p-5">
-                  <h3 className="font-serif font-bold text-base text-stone-800 mb-1 line-clamp-2 group-hover:text-teal-700 transition-colors leading-snug">
+                  <h3 className="font-serif font-bold text-base text-stone-800 mb-1 line-clamp-2 group-hover:text-violet-700 transition-colors leading-snug">
                     {course.title}
                   </h3>
                   <p className="text-xs text-stone-500 leading-relaxed line-clamp-2 flex-1">
@@ -116,7 +116,7 @@ export function CoursesSection() {
                         </>
                       )}
                     </div>
-                    <span className="text-base font-bold text-teal-700">
+                    <span className="text-base font-bold text-violet-700">
                       {formatPrice(course.price)}
                     </span>
                   </div>
@@ -130,7 +130,7 @@ export function CoursesSection() {
         <div className="mt-6 flex justify-center sm:hidden">
           <Link
             href="/courses"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold transition-colors shadow-md"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold transition-colors shadow-md"
           >
             View All Courses <ArrowRight className="h-4 w-4" />
           </Link>

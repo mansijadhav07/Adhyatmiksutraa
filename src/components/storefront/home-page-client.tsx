@@ -124,7 +124,7 @@ function HeroSection() {
       id: 0,
       image: "/assets/slide1.jpg",
       video: null,
-      overlayGradient: "from-emerald-950/80 via-emerald-900/60 to-teal-900/50",
+      overlayGradient: "from-violet-950/80 via-purple-900/60 to-indigo-900/50",
       badge: "Sacred Healing Journey",
       badgeIcon: "crown",
       title: "EVERY MOMENT",
@@ -139,7 +139,7 @@ function HeroSection() {
       id: 1,
       image: "/assets/image3.jpeg",
       video: null,
-      overlayGradient: "from-slate-950/80 via-blue-950/60 to-indigo-900/50",
+      overlayGradient: "from-slate-950/80 via-purple-950/60 to-violet-900/50",
       badge: "Meet the Visionary",
       badgeIcon: "user",
       title: "Sonali Bhattacharya",
@@ -154,7 +154,7 @@ function HeroSection() {
       id: 2,
       image: "/assets/approach-holistic.jpg",
       video: null,
-      overlayGradient: "from-teal-950/80 via-emerald-900/60 to-cyan-900/50",
+      overlayGradient: "from-purple-950/80 via-violet-900/60 to-fuchsia-900/50",
       badge: "Handcrafted with Intention",
       badgeIcon: "sparkles",
       title: "Sacred Healing",
@@ -169,7 +169,7 @@ function HeroSection() {
       id: 3,
       image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&h=1080&fit=crop",
       video: null,
-      overlayGradient: "from-indigo-950/80 via-purple-900/60 to-violet-900/50",
+      overlayGradient: "from-indigo-950/80 via-violet-900/60 to-purple-900/50",
       badge: "Empowering Seekers",
       badgeIcon: "flower",
       title: "10,000+ Seekers",
@@ -186,7 +186,7 @@ function HeroSection() {
     id: 10,
     image: "",
     video: "/Homepage Hero/VIDEO-2026-03-27-17-35-58.mp4",
-    overlayGradient: "from-emerald-950/60 via-emerald-900/40 to-teal-900/30",
+    overlayGradient: "from-violet-950/60 via-purple-900/40 to-indigo-900/30",
     badge: "Sacred Healing Journey",
     badgeIcon: "crown",
     title: "EVERY MOMENT",
@@ -203,7 +203,7 @@ function HeroSection() {
       id: 11,
       image: "",
       video: "/Homepage Hero/VIDEO-2026-03-27-17-36-04.mp4",
-      overlayGradient: "from-emerald-950/60 via-emerald-900/40 to-teal-900/30",
+      overlayGradient: "from-violet-950/60 via-purple-900/40 to-indigo-900/30",
       badge: "Sacred Healing Journey",
       badgeIcon: "crown",
       title: "EVERY MOMENT",
@@ -218,7 +218,7 @@ function HeroSection() {
       id: 12,
       image: "",
       video: "/Homepage Hero/VIDEO-2026-03-27-17-36-25.mp4",
-      overlayGradient: "from-teal-950/60 via-emerald-900/40 to-cyan-900/30",
+      overlayGradient: "from-purple-950/60 via-violet-900/40 to-fuchsia-900/30",
       badge: "Handcrafted with Intention",
       badgeIcon: "sparkles",
       title: "Sacred Healing",
@@ -359,7 +359,7 @@ function HeroSection() {
               {/* Badge — hidden on video slides */}
               {slides[currentSlide].id < 10 && (
               <div className="hero-content-item inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg">
-                {getIcon(slides[currentSlide].badgeIcon, "h-3.5 w-3.5 sm:h-4 sm:w-4 text-emerald-300")}
+                {getIcon(slides[currentSlide].badgeIcon, "h-3.5 w-3.5 sm:h-4 sm:w-4 text-violet-300")}
                 <span className="text-xs sm:text-sm font-medium text-white/90 tracking-wide">
                   {slides[currentSlide].badge}
                 </span>
@@ -373,7 +373,7 @@ function HeroSection() {
                   {slides[currentSlide].title}
                 </h1>
                 {slides[currentSlide].titleHindi && (
-                  <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-emerald-200 leading-tight drop-shadow-md">
+                  <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-violet-200 leading-tight drop-shadow-md">
                     {slides[currentSlide].titleHindi}
                   </p>
                 )}
@@ -389,7 +389,7 @@ function HeroSection() {
 
               {/* Quote — hidden on video slides and small screens */}
               {slides[currentSlide].id < 10 && (
-              <p className="hero-content-item hidden sm:block text-sm sm:text-base md:text-lg text-emerald-200/90 italic leading-relaxed">
+              <p className="hero-content-item hidden sm:block text-sm sm:text-base md:text-lg text-violet-200/90 italic leading-relaxed">
                 {slides[currentSlide].quote}
               </p>
               )}
@@ -405,7 +405,7 @@ function HeroSection() {
               <div className="hero-content-item flex flex-col sm:flex-row gap-2 sm:gap-3 pt-1 sm:pt-2 w-full max-w-xs sm:max-w-none">
                 <Link
                   href={slides[currentSlide].cta1.href}
-                  className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-white hover:bg-emerald-50 text-emerald-700 px-4 py-2.5 sm:px-7 sm:py-3.5 rounded-xl text-sm sm:text-base font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-white hover:bg-violet-50 text-violet-700 px-4 py-2.5 sm:px-7 sm:py-3.5 rounded-xl text-sm sm:text-base font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-violet-500/20 hover:-translate-y-0.5"
                 >
                   {getIcon(slides[currentSlide].cta1.icon, "h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform group-hover:scale-110")}
                   <span className="whitespace-nowrap">{slides[currentSlide].cta1.text}</span>
@@ -463,7 +463,7 @@ function HeroSection() {
             }`} />
             {index === currentSlide && !isPaused && (
               <div
-                className="absolute inset-0 rounded-full bg-emerald-400 origin-left"
+                className="absolute inset-0 rounded-full bg-violet-400 origin-left"
                 style={{
                   animation: `hero-progress ${SLIDE_DURATION}ms linear forwards`,
                 }}
@@ -486,7 +486,7 @@ function HeroSection() {
 
 function BrandingSection() {
   return (
-    <section className="relative py-8 overflow-hidden bg-gradient-to-br from-slate-900 via-emerald-900 to-teal-900">
+    <section className="relative py-8 overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-violet-900">
       <div className="absolute inset-0">
         <Image
           src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600&h=800&fit=crop"
@@ -498,21 +498,21 @@ function BrandingSection() {
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI4MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzA2NGUzYiIvPjwvc3ZnPg=="
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/80 via-teal-900/70 to-blue-900/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-violet-900/70 to-indigo-900/80" />
       </div>
 
       <div className="relative z-10 container text-center">
         <div className="animate-slide-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg mb-4">
-            <Waves className="h-4 w-4 text-emerald-300" />
-            <span className="text-emerald-100 text-sm font-medium tracking-wider">Rooted in Ancient Wisdom</span>
+            <Waves className="h-4 w-4 text-violet-300" />
+            <span className="text-violet-100 text-sm font-medium tracking-wider">Rooted in Ancient Wisdom</span>
           </div>
           
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 leading-tight">
             प्रतिपल
           </h2>
           
-          <p className="text-xl text-emerald-200 italic max-w-2xl mx-auto mb-3">
+          <p className="text-xl text-violet-200 italic max-w-2xl mx-auto mb-3">
             &ldquo;To nurture, to protect, to heal&rdquo;
           </p>
           
@@ -550,15 +550,15 @@ function AboutFounderSection() {
   return (
     <section className="py-8 bg-white relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
-        <div className="absolute top-20 left-20 w-64 h-64 bg-emerald-100 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-teal-100 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-20 left-20 w-64 h-64 bg-violet-100 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-purple-100 rounded-full blur-3xl animate-float-delayed"></div>
       </div>
 
       <div className="container relative z-10">
         <div className="text-center mb-6 animate-slide-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-lg mb-4">
-            <User className="h-4 w-4 text-emerald-600" />
-            <span className="text-emerald-700 font-medium">Meet the Visionary</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-violet-50 rounded-lg mb-4">
+            <User className="h-4 w-4 text-violet-600" />
+            <span className="text-violet-700 font-medium">Meet the Visionary</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-gradient-peacock mb-3">
             About the Founder
@@ -579,11 +579,11 @@ function AboutFounderSection() {
                 placeholder="blur"
                 blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZDFmYWU1Ii8+PC9zdmc+"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-violet-900/30 via-transparent to-transparent"></div>
               <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
                 <div className="flex items-center gap-2">
-                  <Crown className="h-4 w-4 text-emerald-600" />
-                  <span className="text-xs font-semibold text-emerald-800">Healing Expert</span>
+                  <Crown className="h-4 w-4 text-violet-600" />
+                  <span className="text-xs font-semibold text-violet-800">Healing Expert</span>
                 </div>
               </div>
             </div>
@@ -595,7 +595,7 @@ function AboutFounderSection() {
               <h3 className="text-2xl sm:text-3xl font-serif font-bold text-gradient-peacock mb-1">
                 Sonali Bhattacharya
               </h3>
-              <p className="text-base text-emerald-600 font-medium">
+              <p className="text-base text-violet-600 font-medium">
                  Holistic Healer, Occult Consultant & Life Coach 🪷
               </p>
             </div>
@@ -609,22 +609,22 @@ function AboutFounderSection() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-100">
+            <div className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-4 border border-violet-100">
               <h4 className="font-semibold text-slate-800 mb-2 flex items-center gap-2 text-sm">
-                <Sparkles className="h-4 w-4 text-emerald-500" />
+                <Sparkles className="h-4 w-4 text-violet-500" />
                 Key Achievements
               </h4>
               <div className="space-y-1 text-sm text-slate-700">
                 <div className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-violet-500 mt-2 flex-shrink-0"></div>
                   <span>Guided over 10,000 seekers toward spiritual awakening</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-teal-500 mt-2 flex-shrink-0"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 flex-shrink-0"></div>
                   <span>Offers over 50 comprehensive courses in occult & healing</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></div>
                   <span>10+ years of dedicated practice and holistic mentoring</span>
                 </div>
               </div>
@@ -640,7 +640,7 @@ function AboutFounderSection() {
               </Link>
               <Link
                 href="/booking"
-                className="inline-flex items-center gap-2 border-2 border-emerald-500 text-emerald-600 hover:bg-emerald-500 hover:text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300"
+                className="inline-flex items-center gap-2 border-2 border-violet-500 text-violet-600 hover:bg-violet-500 hover:text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300"
               >
                 <Calendar className="h-4 w-4" />
                 Book Session
@@ -675,13 +675,13 @@ function RecentBlogsSection() {
   }
 
   return (
-    <section className="py-8 md:py-12 bg-[#f5f4ef]">
+    <section className="py-8 md:py-12 bg-[#faf7ff]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-end justify-between mb-6">
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-brand/10 rounded-full mb-3">
-              <Leaf className="h-4 w-4 text-emerald-600" />
-              <span className="text-sm font-medium text-emerald-700">From the Journal</span>
+              <Leaf className="h-4 w-4 text-violet-600" />
+              <span className="text-sm font-medium text-violet-700">From the Journal</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gradient-brand">
               Recent Articles
@@ -689,7 +689,7 @@ function RecentBlogsSection() {
           </div>
           <Link
             href="/blogs"
-            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-900 transition"
+            className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-violet-700 hover:text-violet-900 transition"
           >
             View all <ArrowRight className="h-4 w-4" />
           </Link>
@@ -699,7 +699,7 @@ function RecentBlogsSection() {
           {/* Left arrow */}
           <button
             onClick={() => slide("left")}
-            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-emerald-700 hover:border-emerald-200 transition"
+            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-violet-700 hover:border-violet-200 transition"
             aria-label="Previous"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -727,18 +727,18 @@ function RecentBlogsSection() {
                       sizes="(max-width: 640px) 100vw, 33vw"
                     />
                   ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center">
-                      <Leaf className="h-10 w-10 text-emerald-400" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-violet-100 to-purple-100 flex items-center justify-center">
+                      <Leaf className="h-10 w-10 text-violet-400" />
                     </div>
                   )}
                   {blog.category && (
-                    <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 text-xs font-semibold text-emerald-700">
+                    <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 text-xs font-semibold text-violet-700">
                       {blog.category}
                     </span>
                   )}
                 </div>
                 <div className="flex flex-col flex-1 p-5">
-                  <h3 className="font-serif font-bold text-lg text-stone-800 mb-2 line-clamp-2 group-hover:text-emerald-700 transition-colors">
+                  <h3 className="font-serif font-bold text-lg text-stone-800 mb-2 line-clamp-2 group-hover:text-violet-700 transition-colors">
                     {blog.title}
                   </h3>
                   {blog.excerpt && (
@@ -758,7 +758,7 @@ function RecentBlogsSection() {
           {/* Right arrow */}
           <button
             onClick={() => slide("right")}
-            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-emerald-700 hover:border-emerald-200 transition"
+            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-violet-700 hover:border-violet-200 transition"
             aria-label="Next"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -768,7 +768,7 @@ function RecentBlogsSection() {
         </div>
 
         <div className="mt-5 text-center sm:hidden">
-          <Link href="/blogs" className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-900 transition">
+          <Link href="/blogs" className="inline-flex items-center gap-1.5 text-sm font-medium text-violet-700 hover:text-violet-900 transition">
             View all articles <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
@@ -789,13 +789,13 @@ function FeaturedProducts({ products }: { products: Product[] }) {
   }
 
   return (
-    <section className="py-8 sm:py-10 bg-gradient-to-br from-slate-50 to-emerald-50/30">
+    <section className="py-8 sm:py-10 bg-gradient-to-br from-slate-50 to-violet-50/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-emerald-50 rounded-full mb-4">
-            <ShoppingBag className="h-4 w-4 text-emerald-600" />
-            <span className="text-emerald-700 text-sm font-medium">Handcrafted Collection</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-violet-50 rounded-full mb-4">
+            <ShoppingBag className="h-4 w-4 text-violet-600" />
+            <span className="text-violet-700 text-sm font-medium">Handcrafted Collection</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-gradient-peacock mb-3">
             Featured Products
@@ -812,7 +812,7 @@ function FeaturedProducts({ products }: { products: Product[] }) {
               {/* Left arrow */}
               <button
                 onClick={() => scroll("left")}
-                className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-emerald-700 hover:border-emerald-200 transition"
+                className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-violet-700 hover:border-violet-200 transition"
                 aria-label="Scroll left"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -837,7 +837,7 @@ function FeaturedProducts({ products }: { products: Product[] }) {
               {/* Right arrow */}
               <button
                 onClick={() => scroll("right")}
-                className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-emerald-700 hover:border-emerald-200 transition"
+                className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md border border-gray-100 text-slate-600 hover:text-violet-700 hover:border-violet-200 transition"
                 aria-label="Scroll right"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -859,8 +859,8 @@ function FeaturedProducts({ products }: { products: Product[] }) {
           </>
         ) : (
           <div className="text-center py-12">
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-emerald-100 rounded-full mb-4">
-              <ShoppingBag className="h-7 w-7 text-emerald-600" />
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-violet-100 rounded-full mb-4">
+              <ShoppingBag className="h-7 w-7 text-violet-600" />
             </div>
             <h3 className="text-lg font-semibold text-slate-700 mb-2">Coming Soon</h3>
             <p className="text-slate-500 text-sm mb-6">Our featured products are being carefully curated for you.</p>
@@ -934,9 +934,9 @@ function TestimonialsSection() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 max-w-6xl mx-auto">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 rounded-lg mb-3">
-              <Heart className="h-3.5 w-3.5 text-emerald-600" />
-              <span className="text-emerald-700 font-medium text-sm">Reviews</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-violet-50 rounded-lg mb-3">
+              <Heart className="h-3.5 w-3.5 text-violet-600" />
+              <span className="text-violet-700 font-medium text-sm">Reviews</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-gradient-peacock">
               What Our Clients Say
@@ -1011,7 +1011,7 @@ function TestimonialsSection() {
                       className="h-8 w-8 rounded-full object-cover flex-shrink-0 bg-gray-100"
                     />
                   ) : (
-                    <div className="h-8 w-8 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white font-bold text-xs flex-shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-gradient-to-br from-violet-400 to-purple-500 flex items-center justify-center text-white font-bold text-xs flex-shrink-0">
                       {r.consumer.name.charAt(0).toUpperCase()}
                     </div>
                   )}
@@ -1059,7 +1059,7 @@ function TestimonialsSection() {
 
 function CtaBanner() {
   return (
-    <section className="relative py-8 overflow-hidden bg-gradient-to-br from-emerald-600 via-teal-600 to-blue-600">
+    <section className="relative py-8 overflow-hidden bg-gradient-to-br from-violet-700 via-purple-700 to-indigo-700">
       {/* Subtle background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
         <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-white/20 blur-3xl animate-float" />
@@ -1084,14 +1084,14 @@ function CtaBanner() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/#booking"
-              className="inline-flex items-center gap-2 bg-white hover:bg-emerald-50 text-emerald-600 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg"
+              className="inline-flex items-center gap-2 bg-white hover:bg-violet-50 text-violet-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg"
             >
               <Calendar className="h-4 w-4" />
               Book a Session
             </Link>
             <Link
               href="/shop"
-              className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-6 py-3 rounded-lg font-medium transition-all duration-300"
+              className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-violet-700 px-6 py-3 rounded-lg font-medium transition-all duration-300"
             >
               <ShoppingBag className="h-4 w-4" />
               Shop Products
